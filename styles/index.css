@@ -3,7 +3,17 @@ body{
     text-align: center;
 }
 
-
+.search-box {
+    padding:6px;
+    border-radius: 10px;
+}
+#search-btn {
+    padding:6px;
+    border-radius:10px;
+    border:none;
+    font-size: 18px;
+    background-color: blueviolet;
+}
 .meal-item {
     margin:10px;
     width:20%;
