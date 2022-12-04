@@ -1,7 +1,12 @@
 function loadData(searchParam){
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchParam}`)
     .then(response=>response.json())
-    .then(data=>displayMeals(data.meals));
+    .then(data=>displayMeals(data.meals))
+    .catch(error=>{
+        document.getElementById("meals-container").innerHTML=`<h3 class="error">No match found</h3>`;
+        console.log(error);
+    }
+        );
 }
 
 function displayMeals(meals){

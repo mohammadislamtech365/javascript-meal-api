@@ -3,6 +3,12 @@ body{
     text-align: center;
 }
 
+.heading {
+    color:plum;
+}
+.error {
+    color:red;
+}
 .search-box {
     padding:6px;
     border-radius: 10px;
